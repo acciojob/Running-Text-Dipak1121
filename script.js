@@ -34,7 +34,7 @@ const text = document.getElementById('text');
       let currentIndex = 0;
 
       function typeNextCharacter() {
-        if (currentIndex < originalText.length) {
+        if (currentIndex < parseInt(speedInput.value)) {
           const currentCharacter = originalText.charAt(currentIndex);
           text.innerHTML += currentCharacter;
           currentIndex++;
